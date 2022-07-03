@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DadosPedidosActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dados do pedido"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_DadosPedidos_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira o nome"
+        android:inputType="text">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_DadosPedidos_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:hint="Insira a descrição"
+        android:selectAllOnFocus="false"
+        android:singleLine="false">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_DadosPedidos_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira o preço. Ex: 5.4"
+        android:inputType="numberDecimal">
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+
+
+        >
+
+        <Button
+            android:id="@+id/bt_DadosPedidos_modificar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Modificar" />
+
+
+        <Button
+            android:id="@+id/bt_DadosPedidos_eliminar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="eliminar" />
+
+        <Button
+            android:id="@+id/bt_DadosPedidos_cancelar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancelar" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

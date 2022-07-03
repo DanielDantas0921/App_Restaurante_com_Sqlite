@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".NovoPedidoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Novo Pedido"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_NovoPedido_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira o nome"
+        android:inputType="text">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_NovoPedido_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:hint="Insira a descrição"
+        android:selectAllOnFocus="false"
+        android:singleLine="false">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_NovoPedido_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira o preço. Ex: 5.4"
+        android:inputType="numberDecimal">
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+
+
+        >
+
+
+        <Button
+            android:id="@+id/bt_NovoPedido_gravar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:minWidth="150dp"
+            android:text="Gravar" />
+
+        <Button
+            android:id="@+id/bt_NovoPedido_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:text="Cancelar" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
